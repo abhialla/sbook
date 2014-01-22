@@ -1,0 +1,67 @@
+
+<div class="span-24 jagan">	
+	<% form_tag session_path do %>
+		<div class="span-4">
+			&nbsp;
+		</div>
+		
+		<div class="span-20 last">
+			<h1>Sbook</h1>
+    </div>
+
+    <div class="span-24">
+    	<div class="span-6">
+     	 &nbsp;
+    	</div>
+    	<div class="span-18 last">
+				<p><%= label_tag 'login' %>
+				<%= text_field_tag 'login', @login %>
+
+				<%= label_tag 'password' %>
+				<%= password_field_tag 'password', nil %>
+				<%= submit_tag 'Log in' %></p>
+			</div>
+		</div>
+ 		
+		<div class="span-24">
+		 <div class="span-4">
+		   &nbsp;
+		 </div>
+		 <div class="span-20">
+                        <p align="right">
+			<%= label_tag 'keepme logged', 'Keepme logged' %>
+			<%= check_box_tag 'keepme logged', '1', @keepme_logged %>               
+ 			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        <%= link_to "forgotten password?", forgot_password_users_path %></p> 
+		 </div>
+		</div>
+	<% end %>
+</div>
+
+<div class="span-24 abhi">
+	<div class="span-12">
+		<%= image_tag "fb.jpg", :width => 450 %>
+	</div>
+	
+	<div class="span-12 last sign_up">
+		<h3>SIGN UP AS A NEW USER</h3>
+		<% form_for :user, :url => users_path do |f| %>
+			<%= label_tag 'username' %><br />
+			<%= text_field_tag 'username', @login, :class => "colored_textbox_6" %><br/>
+			
+			<%= f.label :email %><br/>
+			<%= f.text_field :email, :class => "colored_textbox_6" %><br/>
+			
+			<%= label_tag 'password' %><br/>
+			<%= password_field_tag 'password', nil, :class => "colored_textbox_6" %><br %>
+			
+			<%= f.label :password_confirmation, 'Confirm Password' %><br/>
+			<%= f.password_field :password_confirmation, :class => "colored_textbox_6" %><br/>
+			
+			<%= submit_tag 'SIGN UP' %>
+		<% end %>
+	</div>
+</div>
+
+
+

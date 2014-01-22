@@ -1,0 +1,17 @@
+
+admin:
+  id:                        1
+  login:                     admin
+  email:                     admin@example.com
+  salt:                      1e8b4bb4bbd164442dbf2475b9fb3a47d3bb20fc 
+  crypted_password:          bc1ab443a184dd4fb4d00579f8fb7f118e0ef325
+  
+guest:
+  id:                        2
+  login:                     guest
+  email:                     guest@example.com
+  salt:                      28bd96eb8899ff73f10a4331af0deef62123df5a 
+  crypted_password:          813f2e73b7f33015564b5fcfe51e3888bb330343
+  
+
+

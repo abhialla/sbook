@@ -1,0 +1,654 @@
+input.small_font_span_1 {margin:0.5em 0;border:1px solid #bbb;}
+input.small_font_span_1:focus {border:1px solid #666;}
+input.small_font_span_1 {width:30px;padding:5px;}
+
+input.small_font_span_3 {margin:0.5em 0;border:1px solid #bbb;}
+input.small_font_span_3:focus {border:1px solid #666;}
+input.small_font_span_3 {width:110px;padding:5px;}
+
+input.small_font_span_4 {margin:0.5em 0;border:1px solid #bbb;}
+input.small_font_span_4:focus {border:1px solid #666;}
+input.small_font_span_4 {width:150px;padding:5px;}
+
+input.small_font_span_18 {margin:0.5em 0;border:1px solid #bbb;}
+input.small_font_span_18:focus {border:1px solid #666;}
+input.small_font_span_18 {width:560px;padding:5px;}
+
+input.short {margin:0.5em 0;border:1px solid #bbb;}
+input.short:focus {border:1px solid #666;}
+input.short {width:75px;padding:5px;}
+
+input.title_small {margin:0.5em 0;border:1px solid #bbb;}
+input.title_small:focus {border:1px solid #666;}
+input.title_small {width:100px;padding:5px;}
+input.title_small {font-size:1.5em;}
+
+input.medium {margin:0.5em 0;border:1px solid #bbb;}
+input.medium:focus {border:1px solid #666;}
+input.medium {width:150px;padding:5px;}
+
+input.extra_medium {margin:0.5em 0;border:1px solid #bbb;}
+input.extra_medium:focus {border:1px solid #666;}
+input.extra_medium {width:180px;padding:5px;}
+
+input.long {margin:0.5em 0;border:1px solid #bbb;}
+input.long:focus {border:1px solid #666;}
+input.long {width:450px;padding:5px;}
+
+input.extra_long {margin:0.5em 0;border:1px solid #bbb;}
+input.extra_long:focus {border:1px solid #666;}
+input.extra_long {width:550px;padding:5px;}
+
+input.large_font_span_8 {margin:0.5em 0;border:1px solid #bbb;}
+input.large_font_span_8:focus {border:1px solid #666;}
+input.large_font_span_8 {width:310px;padding:5px;}
+input.large_font_span_8 {font-size:1.5em;}
+
+input.large_font_span_7 {margin:0.5em 0;border:1px solid #bbb;}
+input.large_font_span_7:focus {border:1px solid #666;}
+input.large_font_span_7 {width:270px;padding:5px;}
+input.large_font_span_7 {font-size:1.5em;}
+
+input.large_font_span_5 {margin:0.5em 0;border:1px solid #bbb;}
+input.large_font_span_5:focus {border:1px solid #666;}
+input.large_font_span_5 {width:190px;padding:5px;}
+input.large_font_span_5 {font-size:1.5em;}
+
+
+.fixed_margin_container {
+	min-width: 950px;
+	margin:40px 35px 10px 35px;
+}
+
+#logo_block {
+	width: 280px;
+	height: 80px;
+	float:left;
+}
+
+.navigation_bar {
+	width: 100%;
+	float: left;
+	font-size: medium; /* could be specified at a higher level */
+	margin: 0;
+	padding: 0 10px 0 10px;
+	border-bottom: 1px solid #999;
+}
+
+.navigation_bar li {
+	float: left;
+	margin: 0; 
+	padding: 0;
+	display: inline;
+	list-style: none;
+}
+	
+.navigation_bar a:link, .navigation_bar a:visited {
+	float: left;
+	font-size: 85%;
+	line-height: 20px;
+	font-weight: normal;
+	margin: 0 10px 0 10px;
+	text-decoration: none;
+	color: #999;
+}
+
+.navigation_bar a.active:link, .navigation_bar a.active:visited, .navigation_bar a:hover {
+	border-bottom: 4px solid #D235D2;
+	padding-bottom: 2px;
+	color: #333;
+}
+
+.strong {
+	font-weight: bold;
+}
+
+hr.thick_line {
+  background: #003366;
+  height: 2px;
+}
+
+.medium_font_size {
+	font-size:1.2em;
+	line-height:1em;
+}
+
+.h2_no_padding {
+	font-size:2em;
+}
+
+table.vertical_align_top td { vertical-align:top; }
+tbody.plain_rows tr:nth-child(even) td {background: transparent;}
+
+.dotted_box {
+	border:1px dotted #999999;
+	padding:0 0 10px 10px;
+}
+
+.blue_box {
+  padding: 0.8em 1.6em 0.8em 1.5em;
+  background: #FFCC33;
+}
+
+a.right_aligned_delete_link {
+	background: #b51115;
+	color: white;
+	font-weight: bold;
+	float:right;
+	text-decoration: none;
+	-moz-border-radius-bottomleft: 5px;
+	-webkit-border-bottom-left-radius: 5px;
+}
+
+a.right_aligned_delete_link:hover {
+	color: white;
+	text-decoration: none;
+}
+
+.sky_blue_box { 
+  padding: 1.5em;
+  background: #EDF9FD; 
+}
+
+/* Buttons */
+input.save_button {
+	width: 85px;
+	height: 33px;
+	border: none;
+	cursor:pointer;
+	background:url(../images/buttons/save_sprite.png) no-repeat;
+	background-position: 0px 0px;
+}
+
+input.save_button:hover  {
+	background-position: 0px -33px;
+}
+
+input.send_tests_button {
+	width: 135px;
+	height: 34px;
+	border: none;
+	cursor:pointer;
+	background:url(../images/buttons/send_tests_sprite.png) no-repeat;
+	background-position: 0px 0px;
+}
+
+input.send_tests_button:hover  {
+	background-position: 0px -34px;
+}
+
+input.change_button {
+	width: 85px;
+	height: 33px;
+	border: none;
+	cursor:pointer;
+	background:url(../images/buttons/change_sprite.png) no-repeat;
+	background-position: 0px 0px;
+}
+
+input.change_button:hover  {
+	background-position: 0px -33px;
+}
+
+a.view_all_button {
+	width:85px;
+	height:33px;
+	display: block;
+	float: left;
+	background: url(../images/buttons/view_all_sprite.png) no-repeat;
+	background-position: 0px 0px;
+}
+
+a.view_all_button:hover {
+	background-position: 0px -33px;
+}
+
+a.filter_button { 
+	width:85px;
+	height:33px;
+	display: block;
+	float: left;
+	background: url(../images/buttons/filter_sprite.png) no-repeat;
+	background-position: 0px 0px;
+}
+
+a.filter_button:hover {
+	background-position: 0px -33px;
+}
+
+.grey_links a {
+	color: #CCCCCC;
+}
+
+.plain_links a {
+	text-decoration: none;
+	color: #000000;
+}
+
+.plain_links a:hover {
+	text-decoration: underline;
+}
+
+.black_links a {
+	color: #999;
+}
+
+.black_links a:hover {
+	color: #000000;
+}
+
+/* Copied from scaffold.css */
+.fieldWithErrors input, .fieldWithErrors textarea {
+	border: 2px solid #FBC2C4;
+	/*display: table;*/
+}
+
+#errorExplanation h2 {
+	text-align: left;
+	font-weight: bold;
+	padding: 5px 5px 5px 15px;
+	font-size: 12px;
+	margin: -7px;
+	color: #c00;
+}
+
+#errorExplanation p {
+	color: #333;
+	margin-bottom: 0;
+	padding: 5px;
+}
+
+#errorExplanation ul li {
+	font-size: 12px;
+	list-style: square;
+}
+
+.center_aligned_text {
+	text-align:center;
+}
+
+.right_aligned_text {
+	text-align:right;
+}
+
+/* Breadcrumb CSS */
+#breadcrumb {
+    font: 12px Arial, Helvetica, sans-serif;
+    background-image:url(../images/breadcrumb/background.png); 
+    background-repeat:repeat-x;
+    height:30px;
+    line-height:30px;
+    color:#9b9b9b;
+    border:solid 1px #cacaca;
+    width:100%;
+    overflow:hidden;
+    margin:0px;
+    padding:0px;
+}
+
+#breadcrumb li {
+    list-style-type:none;
+    float:left;
+    padding-left:10px;
+}
+
+#breadcrumb a {
+    height:30px;
+    display:block;
+    background-image:url(../images/breadcrumb/separator.png); 
+    background-repeat:no-repeat; 
+    background-position:right;
+    padding-right: 15px;
+    text-decoration: none;
+    color:#454545;
+}
+.home {
+    border:none;
+    margin: 8px 0px;
+}
+
+#breadcrumb a:hover {
+	color:#35acc5;
+}
+
+/* Advanced table
+-------------------------------------------------------------- */
+
+table.advanced   { 
+	margin-bottom: 1.4em; 
+}
+
+table.advanced th { 
+	border-bottom: 2px solid #ccc; 
+	font-weight: bold; 
+/*	background: #6699cc;*/
+	background: #003366;
+}
+
+table.advanced th, table.advanced td { 
+	padding: 4px 10px 4px 0; 
+}
+
+
+table.advanced thead { 
+	color: white; 
+}
+
+table.advanced tfoot { 
+	font-style: italic;
+	color: white; 
+}
+
+table.advanced caption { 
+	background: #ffc; 
+}
+
+/* Use this if you use span-x classes on th/td. */
+table.advanced .last { 
+	padding-right: 0; 
+}
+
+table.advanced tr.even td { 
+	background:#c8e3ff; 
+}
+
+table.advanced th {
+    border-color: #bbb;
+    border-width: 0 1px 1px 0;
+    border-style: solid;
+/*	text-align: center;*/
+    margin: 0;
+    padding: 5px;
+}
+
+table.advanced th:first-child, table.advanced td:first-child {
+	border-width: 0 1px 1px 1px;
+}
+
+table.advanced th.first, table.advanced td.first {
+    border-width: 0 1px 1px 1px;
+}
+
+
+table.advanced td {
+    border-color: #bbb;
+    border-width: 0 1px 1px 0;
+    border-style: solid;
+    margin: 0;
+    padding: 5px;
+    background-color: #FFFFFF;
+}
+
+table.thick_border th {
+    border-width: 0 2px 2px 0;
+}
+
+table.thick_border th.first, table.thick_border td.first {
+    border-width: 0 2px 2px 2px;
+}
+
+table.thick_border td {
+    border-width: 0 2px 2px 0;
+}
+
+
+
+.pink_header_text {
+	font-size:2em;
+	color: #CC0066;
+}
+
+.brown_sub_header_text {
+	font-size:1.3em;
+	color: #844d48;
+}
+
+.sub_header_text {
+	font-size:1.3em;
+}
+
+.pink_text {
+	color: #CC0066;
+}
+
+.orange {
+  color: orange;
+}
+
+
+.readable_text {
+	font-size: 13px;
+}
+.home_page_links {
+	font-size: 13px;
+	font-weight:bold;
+	padding:5px 5px;
+}
+
+.home_page_links a {
+	color: #000000;
+	text-decoration: none;
+	padding:5px 5px;
+}
+
+.home_page_links a:hover, .home_page_links a.active {
+	color: #ffffff;
+	background:#FAA61A;
+	padding:5px 5px;
+}
+
+.label {
+	font-size: 15px;
+	color: #003366;
+}
+
+.login_block {
+	background:url('/images/login_background.png') no-repeat; 
+	height: 320px;
+	width: 426px;
+	margin-left:260px;
+	margin-top:60px;
+	padding:10px;
+}
+
+p.custom_paragraph {
+	color:#e6e6ff;
+	padding-top: 4px;
+	font-size:1.3em;
+	line-height:1.3em;
+	text-align:center;
+}
+
+.score_bar {
+	height:25px; 
+	padding-top:6px; 
+	background:#2F5E8C; 
+	color:#FFFFFF;
+	text-align:right;
+	-webkit-box-shadow:1px 0 5px #000;
+  -moz-box-shadow:1px 0 5px #000;
+  box-shadow:1px 0 5px #000;
+  -webkit-animation:supersize .8s cubic-bezier(0,0,0,1);
+}
+
+table.advanced th div.score_seperator {
+	float: left;
+	width: 9.8%;
+	border-color: #bbb;
+  border-width: 0 1px 0 0;
+  border-style: solid;
+	text-align: center;
+}
+
+table.advanced th div.score_seperator, table.advanced th div.last {
+	width: 9.8%;
+}
+   
+.next_page {  
+    page-break-after: always;  
+}
+
+.page_without_bottom_padding {
+	background-color: #FFFFFF;
+	border-left: 1px #DDDDDD solid;
+	border-right: 2px #CCCCCC solid;
+	border-bottom: 2px #CCCCCC solid;
+}
+
+.indent_content {
+	padding: 0 10px 50px 10px;
+}
+
+@media all
+{
+	.page_break	{ display:block; }
+}
+
+@media print
+{
+	.page_break	{ display:block; page-break-before:always; }
+}
+
+@media print 
+{
+	.non_printable_block { display:none; }
+}
+
+.green_border_box
+{
+	border: 5px #00A578 solid;
+	padding: 5px;
+	margin-bottom: 5px;
+}
+
+.light_green_box
+{
+	background-color: #E8F4EC;
+	padding: 5px;
+	margin-bottom: 5px;
+}
+
+.white_box
+{
+	background-color: #FFFFFF;
+	margin-left: 75px;
+	margin-top: 25px;
+}
+
+.dotted_line {
+	border-bottom: 1px dotted #999999;
+}
+
+.light_green_line {
+	border-bottom: 1px solid #DFEFDD;
+}
+
+.paper_footer {
+	font-size: 0.4em;
+}
+
+/************************* PAGINATION **************************************/
+.paginationTG{
+float: left;
+font:11px Tahoma, Verdana, Arial, "Trebuchet MS", Helvetica, sans-serif;
+ color:#000000;
+margin-top: 20px;
+margin-left:auto;
+margin-right:auto;
+margin-bottom: 20px;
+width:100%;
+}
+
+.paginationTG ul{
+margin: 0;
+padding: 0;
+}
+
+.paginationTG li{
+list-style-type: none;
+display: inline;
+padding-bottom: 1px;
+}
+
+.paginationTG a, .paginationTG a:visited{
+padding: 5px 8px;
+text-decoration: none; 
+color: #000000;
+}
+
+.paginationTG a:hover, .paginationTG a:active{
+color: #ffffff;
+background-color: #929292;
+background-position: top center;
+background-repeat: no-repeat;
+text-decoration: none; 
+font-weight: bold;
+}
+
+.paginationTG li.currentpage{	
+color: #D235D2;
+background-color: #000000;
+background-position: top center;
+background-repeat: no-repeat;
+text-decoration: none; 
+}
+.jagan{
+color: #D235D2;
+background-color: #929292;
+}
+.abhi{
+color: #000000;
+background-color: #003333;
+
+
+
+
+
+
+ .delete_links a {
+  text-decoration: none;
+  font-weight: bold;
+	font-size: 24px;
+  color: #ff1a00;
+}
+
+.delete_links a:hover {
+  color: #ff1a00;
+  text-decoration: none;
+	font-size: 24px;
+  font-weight: bold;
+}
+
+
+
+
+/*
+
+.paginationTG li.currentpage{
+font-weight: bold;
+padding: 5px 9px;
+background-color: inherit;
+color: #000000;
+background-color: #D235D2;
+
+}
+
+.paginationTG li.disablepage{
+padding: 0 5px;
+border: 1px solid #929292;
+color: #929292;
+}
+
+.paginationTG li.nextpage{
+font-weight: bold;
+}
+*/
+
+
+
+* html .paginationTG li.currentpage, * html .paginationTG li.disablepage{ /*IE 6 and below. Adjust non linked LIs slightly to account for bugs*/
+padding-right: 9px;
+padding-left: 9px;
+}
+/************************* PAGINATION **************************************/
+

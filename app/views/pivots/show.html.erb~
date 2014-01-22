@@ -1,0 +1,18 @@
+<p>
+  <b>Description:</b>
+  <%=h @pivot.description %>
+</p>
+
+<p>
+  <b>Image url:</b>
+  <%=h @pivot.image_url %>
+</p>
+
+<p>
+  <b>Like:</b>
+  <%=h @pivot.like %>
+</p>
+
+
+<%= link_to 'Edit', edit_pivot_path(@pivot) %> |
+<%= link_to 'Back', pivots_path %>

@@ -1,0 +1,8 @@
+admin_role:
+  id: 1
+  name: admin
+ 
+guest_role:
+  id: 2
+  name: guest
+ 

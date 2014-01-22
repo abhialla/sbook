@@ -1,0 +1,20 @@
+
+
+
+<p>
+  <b>Description:</b>
+  <%=h @comment.description %>
+</p>
+
+<p>
+  <b>Like:</b>
+  <%=h @comment.like %>
+</p>
+<div class="home_page_links">
+  <p class="readable_text">
+	<a href="/pivots" class="">Home</a>
+</div>
+
+
+<%= link_to 'Edit', edit_pivot_comment_path(:pivot_id => @pivot.id, :id => @comment.id), :class => "button negative" %> 
+<%= link_to 'Back', pivot_comments_path(:pivot_id => @pivot.id), :class => "button negative" %>

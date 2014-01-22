@@ -1,0 +1,52 @@
+<div class="home_page_links">
+  <p class="readable_text">
+	<a href="/pivots" class="">Home</a>
+</div>
+<div class="span-24">
+ <div class="span-24">
+  <h2>
+   <% if params[:action] == "new" %>
+     New Comment
+   <% else %>
+     Edit Comment
+   <% end %>
+  </h2>
+  </div>
+ 
+ <% form_for([@pivot, @comment]) do |f| %>
+   <div class="span-24">
+    <div class="span-24">
+     <% f.error_messages %>
+      </div>
+
+      <div class="span-24">
+       <div class="span-13">
+         <%= f.label :description %><br/>
+         <%= f.text_field :description, :class => "title_small" %>
+      </div>
+      
+     <div class="span-7">
+      <%= f.label :like %><br/>
+       <%= f.check_box :like, :class => "title_small" %>
+      </div>
+
+      <div class="span-4 last">
+       <br/>
+       <% if params[:action] == "new" %>
+         <%= f.submit 'Create' %>
+       <% else %>
+         <%= f.submit 'Update' %>
+        <% end %>
+        </div>
+       </div>
+  <div class="span-24 last">
+          <%= link_to 'Back', pivot_comments_path, :class => "button negative" %>
+    </div>
+  </div>
+         <% end %>
+        </div>
+
+
+
+
+      

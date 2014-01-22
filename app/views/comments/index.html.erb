@@ -1,0 +1,16 @@
+<h1>Listing comments</h1>
+<table>
+  <tr>
+    <th>Description</th>
+    <th>Like</th>
+  </tr>
+<% @comments.each do |comment| %>
+  <tr>
+    <td><%=h comment.description %></td>
+    <td><%=h comment.like %></td>
+    <td><%= link_to 'Show', pivot_comment_path(:pivot_id => @pivot.id,:id => comment.id) %> | <%= link_to 'Edit', edit_pivot_comment_path(:pivot_id => @pivot.id,:id => comment.id) %> | <%= link_to 'Destroy', pivot_comment_path(:pivot_id => @pivot.id, :id => comment.id), :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+<br />
+<%= link_to 'New comment', new_pivot_comment_path(:pivot_id => @pivot.id) %>

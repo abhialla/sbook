@@ -1,0 +1,50 @@
+<div class="span-24 right_aligned_text last">
+		
+			<div style="padding-top:20px;">
+			<p class="readable_text">
+		  <a href="/logout" title="Log out">Log out</a>
+		</p>
+	</div>
+<div class="span-24 jagan">
+	<div class="span-24">
+		<div class="span-18">
+			<h2>pivots List</h2>
+		</div>
+               <div class="span-3 last">
+			<%= link_to 'User list', users_path, :class => "button positive" %>
+		</div>
+
+		<div class="span-3 last">
+			<%= link_to 'New pivot', new_pivot_path, :class => "button positive" %>
+		</div>
+	</div>
+
+	<% @pivots.each do |pivot| %>
+		<div class="span-24">
+          <div class="span-6"><%=pivot.description %></div>
+          <div class="span-18 last">&nbsp</div>
+    </div>
+
+    <div class="span-24">
+          <div class="span-2"><%= image_tag pivot.image_url unless pivot.image_url.blank?%></div>
+          <div class="span-24 last">&nbsp</div>
+    </div>
+		<div class="span-24">	
+					<div class="span-6"><%=pivot.like %></div>
+          	<div class="span-6"><%= link_to 'Show comments', pivot_comments_path(:pivot_id => pivot.id) %> | <%= link_to 'Edit', edit_pivot_path(:id => pivot.id) %> | <%= link_to 'Destroy', pivot_path(:id => pivot.id), :confirm => 'Are you sure?', :method => :delete %></div>
+            <div class="span-12 last">&nbsp</div>
+     </div>
+  
+
+		  <% pivot.comments.each do |comment| %>
+	<div class="span-24 abhi">
+		 <div class="span-5"><%=h comment.description %></div>
+     <div class="span-13">&nbsp</div>
+     <div class="span-6 last">&nbsp</div>
+  </div>
+  <div class="span-24">	
+				<div class="span-6"><%=h comment.like %></div>
+          <div class="span-6"><%= link_to 'Show', pivot_comment_path(:pivot_id => pivot.id, :id => comment.id) %> | <%= link_to 'Edit', edit_pivot_comment_path(:pivot_id => pivot.id, :id => comment.id) %> | <%= link_to 'Destroy', pivot_comment_path(:pivot_id => pivot.id, :id => comment.id), :confirm => 'Are you sure?', :method => :delete %></div>	
+<% end %>	
+ <% end %>
+</div>

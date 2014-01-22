@@ -1,0 +1,62 @@
+<div class="span-24 jagan">
+	<div class="span-24">
+          <div class="span-6">
+		<h2>
+			<% if params[:action] == "new" %>
+				New pivot
+			<% else %>
+				Edit pivot
+			<% end %>
+		</h2>
+             </div>
+            <div class="span-12">&nbsp</div>
+            
+            <div class="span-6" "home_page_links">
+            <p class="readable_text">
+            <a href="/pivots" class="">Home</a>
+        </div>
+	</div>
+
+	
+	<div class="span-24">
+		<% form_for(@pivot) do |f| %>
+   		<div class="span-24">
+				<% f.error_messages %>
+			</div>
+
+			<div class="span-24">
+				<div class="span-8">
+					<%= f.label :description %><br/>
+					<%= f.text_field :description, :class => "title_small" %>
+				</div>
+
+				<div class="span-7">
+					<%= f.label :image_url %><br/>
+					<%= f.text_field :image_url, :class => "title_small" %>
+				</div>
+     
+				<div class="span-5">
+					<%= f.label :like %><br/>
+					<%= f.check_box :like, :class => "title_small" %>
+				</div>
+
+				<div class="span-4 last">
+					<% if params[:action] == "new" %>
+						<%= f.submit 'Create' %>
+					<% else %>
+						<%= f.submit 'Update' %>
+					<% end %>
+				</div>
+			</div>
+		<% end %>
+	</div>
+
+	<div class="span-24 last">
+		<%= link_to 'Back', pivots_path, :class => "button negative" %>
+	</div>
+</div>
+
+
+
+
+      
